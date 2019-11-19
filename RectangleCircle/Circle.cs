@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Math;
 
 namespace RectangleCircle
 {
@@ -8,7 +9,6 @@ namespace RectangleCircle
     {
         private string name;
         private float radius; 
-        private double PI = 3.14159;
 
         public Circle(string name, float radius)
         {
