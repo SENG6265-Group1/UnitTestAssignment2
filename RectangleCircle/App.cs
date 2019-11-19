@@ -16,17 +16,11 @@ namespace RectangleCircle
         public void Run()
         {
             var rectangle = new Rectangle("Sample Rectangle",2,4);
-
-            writeline(rectangle.GetName());
-            writeline("Rectangle Area: " + rectangle.GetArea());
-            writeline("Rectangle Permeter: " + rectangle.GetPerimeter());
+            writeline(rectangle.ToString());
 
 
             var circle = new Circle("Sample Circle",4);
-
-            writeline(circle.GetName());
-            writeline("Circle Area: " + circle.GetArea());
-            writeline("Circle circumference: " + circle.GetCircumference());
+            writeline(circle.ToString());
 
 
         }

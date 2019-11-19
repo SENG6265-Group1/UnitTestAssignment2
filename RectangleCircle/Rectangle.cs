@@ -44,5 +44,15 @@ namespace RectangleCircle
            
             return 2 * (length + width);
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(GetName());
+            sb.AppendLine("Rectangle Area: " + GetArea());
+            sb.AppendLine("Rectangle Permeter: " + GetPerimeter()); 
+            return sb.ToString();
+        }
     }
 }

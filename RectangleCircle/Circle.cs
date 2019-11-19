@@ -36,5 +36,15 @@ namespace RectangleCircle
 
             return radius * 2 * PI ;
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(GetName());
+            sb.AppendLine("Circle Area: " + GetArea());
+            sb.AppendLine("Circle circumference: " + GetCircumference());
+            return sb.ToString();
+        }
     }
 }
